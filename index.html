@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Expense Tracker</title>
+   
+</head>
+<body>
+
+    <header>
+        <h1>Expense Tracker</h1>
+      </header>
+  
+    <section class="container">
+
+        <form id="myForm">
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount" placeholder="Enter amount" required><br><br>
+        
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" placeholder="Enter description" required><br><br>
+        
+            <label for="category">Category:</label>
+    <select id="category" name="category">
+        <option value="movie">Movie</option>
+        <option value="grocery">Grocery</option>
+        <option value="fuel">Fuel</option>
+    </select><br><br>
+
+
+            <input type="submit" value="Submit">
+
+
+            <ul id="data"></ul>
+        </form>
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+    <script src="index.js"></script>
+   
+</body>
+</html>
